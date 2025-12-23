@@ -1,0 +1,19 @@
+# PhoneSplat Server Requirements
+# Python 3.10+
+
+# Core dependencies
+websockets>=12.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+PyYAML>=6.0.0
+
+# For image processing and validation
+Pillow>=10.0.0
+
+# Optional: For REST API (Phase 2)
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+
+# Optional: For MonoGS integration (Phase 2)
+# torch>=2.0.0
+# torchvision>=0.15.0

@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node/React Native
+node_modules/
+.expo/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Phone app builds
+phone-app/android/app/build/
+phone-app/android/.gradle/
+phone-app/ios/Pods/
+phone-app/*.apk
+phone-app/*.aab
+phone-app/*.ipa
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Captures and outputs (large files)
+server/captures/
+MonoGS/monogs_output/
+*.ply
+*.pth
+*.pt
+
+# MonoGS submodule (clone separately)
+MonoGS/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Misc
+*.log
+Thumbs.db
+nul
+
+# Other projects in this folder (not part of Phone2Splat)
+From-video-to-3D-object/
+instant-ngp/
+captures/
+
+# Claude settings
+.claude/

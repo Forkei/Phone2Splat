@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "PhoneSplat",
+    "slug": "phonesplat",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.phonesplat.scanner",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PhoneSplat needs camera access to capture frames for 3D reconstruction",
+        "NSMotionUsageDescription": "PhoneSplat uses motion sensors to track device orientation during scanning"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.phonesplat.scanner",
+      "permissions": [
+        "CAMERA",
+        "HIGH_SAMPLING_RATE_SENSORS",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "PhoneSplat needs camera access to capture frames for 3D reconstruction",
+          "enableMicrophonePermission": false
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "PhoneSplat needs camera access to capture frames for 3D reconstruction"
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "PhoneSplat uses motion sensors to track device orientation during scanning"
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "17b26b7f-9c41-4b88-9ea0-649f91e72c55"
+      }
+    }
+  }
+}
